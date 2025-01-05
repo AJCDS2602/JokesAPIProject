@@ -16,12 +16,6 @@ router.put('/updateJoke/:id', updateJoke);
 // Define la ruta para eliminar un chiste existente por id
 router.delete('/deleteJoke/:id?', deleteJokeById);
 
-// Define la ruta para obtener todos los chistes por categoría
-router.get('/getJokesByCategory/:category', getJokesByCategory);
-
-// Define la ruta para obtener todos los chistes por puntaje
-router.get('/getJokesByRating/:rating', getJokesByRating);
-
 
 router.get('/getJokeById/:id?', getJokeById);
 
@@ -360,5 +354,11 @@ router.get('/getJokeById/:id?', getJokeById);
  *                 error:
  *                   type: string
  */ 
+
+// Define la ruta para obtener todos los chistes por categoría
+router.get('/getJokesByCategory/:category', getJokesByCategory);
+
+// Define la ruta para obtener todos los chistes por puntaje
+router.get('/getJokesByRating/:rating', getJokesByRating);
 
 export default router;
