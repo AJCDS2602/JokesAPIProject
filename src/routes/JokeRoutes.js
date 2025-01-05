@@ -1,5 +1,5 @@
 import express from 'express';
-import {deleteJokeById, getJokeById} from '../controllers/JokeController.js';
+import {deleteJokeById, getJokeById,getJokesByRating,getJokesByCategory} from '../controllers/JokeController.js';
  
 // Crea un enrutador de Express
 const router = express.Router();
