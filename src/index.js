@@ -4,7 +4,7 @@ import dotenv from 'dotenv'; //para manejar variables de entorno
 import mongoose from 'mongoose'; //para interactuar con DB MongoDB
 import jokeRoutes from './routes/JokeRoutes.js'; 
 
-
+ 
 
 dotenv.config();
 const app = express();
