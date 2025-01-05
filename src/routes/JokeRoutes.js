@@ -17,6 +17,8 @@ router.put('/updateJoke/:id', updateJoke); */
 router.delete('/deleteJoke/:id?', deleteJokeById);
 
 
+
+
 router.get('/getJokeById/:id?', getJokeById);
 
 /**
@@ -266,5 +268,7 @@ router.get('/getJokeById/:id?', getJokeById);
  *                 error:
  *                   type: string
  */
+
+
 
 export default router;
