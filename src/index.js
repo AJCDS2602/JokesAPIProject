@@ -3,8 +3,8 @@ import cors from 'cors'; //middleware para permitir solicitudes de diferentes or
 import dotenv from 'dotenv'; //para manejar variables de entorno
 import mongoose from 'mongoose'; //para interactuar con DB MongoDB
 import jokeRoutes from './routes/JokeRoutes.js'; 
-import { swaggerDocs as V1SwaggerDocs } from '../swagger.js';
 
+import { swaggerDocs as V1SwaggerDocs } from '../swagger.js';
 
 dotenv.config();
 const app = express();
