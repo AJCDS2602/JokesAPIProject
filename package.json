@@ -1,13 +1,11 @@
 {
-  "name": "jokesapiproject",
+  "name": "jokesprojectapi",
   "version": "1.0.0",
-  "description": "API de chistes desarrollada por Abraham Carranza, Diana Rodriguez y Abraham Carranza",
+  "type": "module",
+  "description": "Proyecto de Topicos Especiales de Programacion. Diana Rodriguez, Abraham Carranza y Andrea Torres. Seccion 16343",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test jest"
   },
   "keywords": [],
   "author": "",

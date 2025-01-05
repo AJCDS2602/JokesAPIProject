@@ -4,7 +4,7 @@ import dotenv from 'dotenv'; //para manejar variables de entorno
 import mongoose from 'mongoose'; //para interactuar con DB MongoDB
 import jokeRoutes from './routes/JokeRoutes.js'; 
 
- 
+import { swaggerDocs as V1SwaggerDocs } from '../swagger.js';
 
 dotenv.config();
 const app = express();
@@ -50,7 +50,7 @@ app.use('/api', jokeRoutes);
 // Inicia el servidor y escucha en el puerto definido
 const server = app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
-    
+    V1SwaggerDocs(app,port);
 });
 
 export { app, server };
