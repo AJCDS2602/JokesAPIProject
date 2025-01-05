@@ -16,6 +16,12 @@ router.put('/updateJoke/:id', updateJoke);
 // Define la ruta para eliminar un chiste existente por id
 router.delete('/deleteJoke/:id?', deleteJokeById);
 
+// Define la ruta para obtener todos los chistes por categoría
+router.get('/getJokesByCategory/:category', getJokesByCategory);
+
+// Define la ruta para obtener todos los chistes por puntaje
+router.get('/getJokesByRating/:rating', getJokesByRating);
+
 
 router.get('/getJokeById/:id?', getJokeById);
 
@@ -266,5 +272,93 @@ router.get('/getJokeById/:id?', getJokeById);
  *                 error:
  *                   type: string
  */
+
+/**
+ * @swagger
+ * /getJokesByCategory/{category}:
+ *   get:
+ *     summary: Obtener todos los chistes de una categoría específica
+ *     parameters:
+ *       - name: category
+ *         in: path
+ *         required: true
+ *         description: Categoría del chiste a obtener.
+ *         schema:
+ *           type: string
+ *     responses:
+ *       '200':
+ *         description: Cantidad de chistes encontrados.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                 count:
+ *                   type: integer
+ *       '400':
+ *         description: Error en la validación de datos.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ *       '500':
+ *         description: Error al obtener la cantidad de chistes por categoría.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ */ 
+
+/**
+ * @swagger
+ * /getJokesByRating/{rating}:
+ *   get:
+ *     summary: Obtener todos los chistes de un puntaje específico
+ *     parameters:
+ *       - name: rating
+ *         in: path
+ *         required: true
+ *         description: Puntaje del chiste a obtener.
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       '200':
+ *         description: Cantidad de chistes encontrados.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                 count:
+ *                   type: integer
+ *       '400':
+ *         description: Error en la validación de datos.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ *       '500':
+ *         description: Error al obtener la cantidad de chistes por categoría.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ */ 
 
 export default router;
