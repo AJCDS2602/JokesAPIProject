@@ -1,5 +1,5 @@
 # JokesAPIProject
-API de chistes desarrollada por Abraham Carranza, Diana Rodriguez y Abraham Carranza
+API de chistes desarrollada por Abraham Carranza, Diana Rodriguez y Andrea Torres
 
 Para iniciar la ejecución del script / servidor usar:
 
