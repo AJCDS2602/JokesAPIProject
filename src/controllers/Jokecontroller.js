@@ -173,9 +173,9 @@ export const createJoke = async (req, res) => {
     } catch (error) {
         return res.status(500).json({ message: 'Error al guardar el chiste en la base de datos', error: error.message });
     }
-};
+}; 
 
-//Funcion para actualizar un chiste
+//Funcion para actualizar un chiste. Diana Rodriguez. Endpoint #3.
 export const updateJoke = async (req, res) => {
     const { id } = req.params; //Obtiene el ID del chiste desde los parámetros de la URL
     const { text, author, rating, category } = req.body; //Obtiene los nuevos datos del cuerpo de la solicitud
