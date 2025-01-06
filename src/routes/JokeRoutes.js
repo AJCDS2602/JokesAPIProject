@@ -273,7 +273,6 @@ router.get('/getJokesByRating/:rating', getJokesByRating);
  *                   type: string
  */
 
-
 /**
  * @swagger
  * /getJokesByCategory/{category}:
@@ -361,6 +360,4 @@ router.get('/getJokesByRating/:rating', getJokesByRating);
  *                 error:
  *                   type: string
  */ 
-
-
 export default router;
